@@ -1450,7 +1450,7 @@ class Inbound extends XrayCommonClass {
             params.set("security", "none");
         }
 
-        const link = `vless://${uuid}@${address}:${port}`;
+        const link = `vless://${uuid}@${address}:443`;
         const url = new URL(link);
         for (const [key, value] of params) {
             url.searchParams.set(key, value)
