@@ -54,6 +54,14 @@ func GetBinFolderPath() string {
 	return binFolderPath
 }
 
+func GetConfigPath() string {
+	configPath := os.Getenv("XUI_CONFIG_PATH")
+	if configPath == "" {
+		configPath = "bin/config.json"
+	}
+	return configPath
+}
+
 func GetDBFolderPath() string {
 	dbFolderPath := os.Getenv("XUI_DB_FOLDER")
 	if dbFolderPath == "" {

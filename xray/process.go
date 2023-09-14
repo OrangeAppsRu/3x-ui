@@ -31,7 +31,7 @@ func GetBinaryPath() string {
 }
 
 func GetConfigPath() string {
-	return config.GetBinFolderPath() + "/config.json"
+	return config.GetConfigPath()
 }
 
 func GetGeositePath() string {
